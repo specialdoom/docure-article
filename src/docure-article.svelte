@@ -28,5 +28,6 @@
   :host .docure-article-content {
     width: 100%;
     margin-top: 20px;
+    white-space: pre-wrap;
   }
 </style>
