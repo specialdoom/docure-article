@@ -2,10 +2,17 @@
 
 <script>
   export let title = '';
+  export let workflow = '';
 </script>
 
 <div class="docure-article-title">
   {title}
+  {#if workflow}
+    <div class="docure-article-workflow">
+      <a href={`http://localhost:4200/workflow/${workflow}`}>Related workflow</a
+      >
+    </div>
+  {/if}
 </div>
 <div class="docure-article-content">
   <slot />
@@ -13,6 +20,7 @@
 
 <style>
   :host {
+    position: relative;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -29,5 +37,33 @@
     width: 100%;
     margin-top: 20px;
     white-space: pre-wrap;
+  }
+
+  :host .docure-article-workflow {
+    position: absolute;
+    right: 20px;
+    top: 0;
+    width: auto;
+  }
+
+  a {
+    background-color: red;
+    box-shadow: 0 5px 0 darkred;
+    font-size: 12px;
+    color: white;
+    padding: 10px 10px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  a:hover {
+    background-color: #ce0606;
+    cursor: pointer;
+  }
+
+  a:active {
+    box-shadow: none;
+    top: 5px;
   }
 </style>
