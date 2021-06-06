@@ -42,7 +42,7 @@
   :host .docure-article-workflow {
     position: absolute;
     right: 20px;
-    top: 0;
+    top: 15px;
     width: auto;
   }
 
