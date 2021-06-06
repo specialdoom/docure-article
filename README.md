@@ -7,9 +7,9 @@ npm i @specialdoom/docure-article
 ### usage
 
 ```html
-
+<docure-article title="Title">Content</docure-article>
 ```
 
-### example 
+<!-- ### example  -->
 
-![Presentation](presentation.png)
+<!-- ![Presentation](presentation.png) -->
