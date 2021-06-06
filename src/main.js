@@ -1,3 +1,3 @@
-import DocureButton from './docure-button.svelte';
+import DocureArticle from './docure-article.svelte';
 
-export default DocureButton;
+export default DocureArticle;

@@ -1,15 +1,13 @@
-### docure-button
+### docure-article
 
 ```js
-npm i @specialdoom/docure-button
+npm i @specialdoom/docure-article
 ```
 
 ### usage
 
 ```html
-<docure-button primary>Primary</docure-button>
-<docure-button secondary>Secondary</docure-button>
-<docure-button link>Link</docure-button>
+
 ```
 
 ### example 
