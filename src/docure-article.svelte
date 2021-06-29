@@ -9,8 +9,12 @@
   {title}
   {#if workflow}
     <div class="docure-article-workflow">
-      <a href={`http://localhost:4200/workflow/${workflow}`}>Related workflow</a
+      <a
+        href={`http://localhost:4200/preview-workflow/${workflow}`}
+        target="_blank"
       >
+        Related workflow
+      </a>
     </div>
   {/if}
 </div>
